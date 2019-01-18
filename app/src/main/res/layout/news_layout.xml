@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+<android.support.v7.widget.CardView
+    android:id="@+id/itemtouch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2.5dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtBlogtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blogtitle"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPublish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publisher, Date" />
+
+        <ImageView
+            android:id="@+id/imageShot"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/logo"
+            android:scaleType="centerCrop"/>
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txtBlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blog" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+</LinearLayout>
+
